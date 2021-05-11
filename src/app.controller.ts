@@ -5,6 +5,11 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get()
+  getRoot() {
+	return 'Hello world data story!'
+  }
+
   @Post('boot')
   postBoot() {
 	return {
