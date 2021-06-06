@@ -11,4 +11,12 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true
+  },
+  "include": [
+    "src",
+    "node_modules/@ajthinking/data-story/src/core/utils",
+    "node_modules/@ajthinking/data-story/src/core/types",
+    "node_modules/@ajthinking/data-story/src/core/*.ts"
+  ],
+  "exclude": ["node_modules/@ajthinking/data-story/src/core/EngineFactory.ts"]
 }
