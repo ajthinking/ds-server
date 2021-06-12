@@ -16,7 +16,8 @@
     "src",
     "node_modules/@ajthinking/data-story/src/core/utils",
     "node_modules/@ajthinking/data-story/src/core/types",
-    "node_modules/@ajthinking/data-story/src/core/*.ts"
+    "node_modules/@ajthinking/data-story/src/core/**/*.ts",
+	"node_modules/@ajthinking/data-story/src/server/**/*.ts",
   ],
   "exclude": ["node_modules/@ajthinking/data-story/src/core/EngineFactory.ts"]
 }

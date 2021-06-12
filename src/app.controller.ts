@@ -6,6 +6,7 @@ import PortModel from '@ajthinking/data-story/src/core/PortModel';
 import DiagramModel from '@ajthinking/data-story/src/core/DiagramModel';
 import NodeParameter from '@ajthinking/data-story/src/core/NodeParameter';
 import { BootPayload } from '@ajthinking/data-story/src/core/types/BootPayload';
+import ServerNodeFactory from '@ajthinking/data-story/src/server/ServerNodeFactory';
 
 @Controller()
 export class AppController {
@@ -17,14 +18,15 @@ export class AppController {
   }
 
   @Post('boot')
-  postBoot(payload: BootPayload) {
-    console.log(payload);
+  postBoot() {
 
     const feature = new Feature();
     console.log(feature.type);
 
     const nodeParameter = new NodeParameter('some_node');
     console.log(nodeParameter);
+
+	console.log(ServerNodeFactory)
 
     return {
       stories: [],
